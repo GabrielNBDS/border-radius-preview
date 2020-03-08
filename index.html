@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Preview</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Border Radius Preview</h1>
+    </header>
+    <div class="container">
+      <div id="box">
+        <div class="inputsContainer">
+          <label for="top-left">Top Left</label>
+          <input
+            id="top-left"
+            type="number"
+            value="0"
+            min="0"
+            max="500"
+            onchange="handleChange"
+          />
+          <label for="top-right">Top Right</label>
+          <input
+            id="top-right"
+            type="number"
+            value="0"
+            min="0"
+            max="500"
+            onchange="handleChange"
+          />
+          <label for="bottom-right">Bottom Right</label>
+          <input
+            id="bottom-right"
+            type="number"
+            value="0"
+            min="0"
+            max="500"
+            onchange="handleChange"
+          />
+          <label for="bottom-left">Bottom Left</label>
+          <input
+            id="bottom-left"
+            type="number"
+            value="0"
+            min="0"
+            onchange="handleChange"
+          />
+        </div>
+      </div>
+      <textarea id="textarea" readonly value=""></textarea>
+      <button id="btn">Copy to Clipboard</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
